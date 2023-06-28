@@ -1,0 +1,17 @@
+Feature: Buscar restaurantes saludables cercanos
+    Como turista y cliente de Qhali Mikhuy que viaja con frecuencia
+    Deseo buscar opciones de restaurantes saludables cerca de mi ubicación actual
+    Para poder mantener una alimentación saludable durante mis viajes
+
+Scenario: Buscar restaurantes saludables cerca de mi ubicación actual
+    Given que estoy registrado en la plataforma como "<usuario>"
+    And mi ubicación actual es "<ubicacion_actual>"
+    When busco opciones de restaurantes saludables cerca de mi ubicación
+    Then se muestran los siguientes restaurantes cercanos:
+
+Example:
+
+      | Nombre            | Dirección                      |
+      | Restaurante A     | Calle Principal 123            |
+      | Restaurante B     | Avenida Central 456            |
+      | Restaurante C     | Plaza Mayor 789                |

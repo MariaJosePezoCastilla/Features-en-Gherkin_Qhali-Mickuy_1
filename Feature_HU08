@@ -1,0 +1,18 @@
+Feature: Compartir progreso e interactuar con otros usuarios
+    Como cliente de Qhali Mikhuy deseo compartir mi progreso con amigos y familiares registrados en la plataforma
+    e interactuar con otros usuarios para obtener apoyo mutuo durante mi camino hacia una alimentación saludable y
+    lograr un mejor rendimiento.
+
+Scenario: Compartir progreso con amigos y familiares
+    Given que estoy registrado en la plataforma como "<usuario>"
+    And tengo amigos y familiares registrados en la plataforma
+    When actualizo mi progreso de alimentación saludable
+    Then mis amigos y familiares deben recibir una notificación de mi progreso
+
+Example:
+
+    | usuario  | Tipo de Comida | Calorías |
+    | usuario1 | Desayuno       | 350      |
+    | usuario1 | Almuerzo       | 500      |
+    | usuario1 | Cena           | 400      |
+

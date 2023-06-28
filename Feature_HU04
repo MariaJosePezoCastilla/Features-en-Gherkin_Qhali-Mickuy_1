@@ -1,0 +1,25 @@
+Feature: Sistema de recomendación personalizado basado en inteligencia artificial
+    Como administrador de Qhali Mikhuy deseo implementar un sistema de recomendación 
+    basado en inteligencia artificial para que los usuarios puedan recibir un plan de 
+    alimentación personalizado y respaldado por expertos en nutrición según sus datos.
+
+Scenario: Proporcionar datos personales y preferencias
+    Given soy un usuario de Qhali Mikhuy    
+    When  ingrese mis datos personales relevantes, como <edad>, <género>, <altura>, <peso> y <objetivos de salud>,
+    en el sistema de recomendación 
+    And tengo la opción de proporcionar información adicional, como <preferencias dietéticas>, <restricciones alimentarias> 
+    y <enfermedades existentes>
+    Then los datos se registran correctamente y se tienen en cuenta para generar mi <plan de alimentación personalizado>.
+
+Example:
+
+    |   Edad    |   Género      |   Altura  |   Peso    |   Objetivos de salud          |   Preferencias dietéticas                             |   
+    |   20      |   Femenino    |   1.65    |   58 kg   |   Reducir índice de azúcar    |   Alimentos sin azúcar o endulzados con edulcorantes  |
+
+
+    |   Restricciones alimentarias  |   Enfermedades existentes |   Plan de alimentación personalizado          |
+    |   no consumir azúcar          |   Diabetes                |   Plan alimenticio personalizado de: XXXXXXX  |
+
+
+
+
