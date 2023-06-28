@@ -1,0 +1,21 @@
+Feature: Procesamiento de lenguaje natural para recomendaciones personalizadas
+    Como desarrollador de Qhali Mikhuy, deseo implementar un sistema para  procesar lenguaje natural
+    que comprenda las preferencias y necesidades de los usuarios, para así generar recomendaciones 
+    altamente personalizadas y adaptadas a cada cliente.
+
+Scenario: Generar recomendaciones personalizadas mediante procesamiento de lenguaje natural
+    Given tengo acceso al sistema de procesamiento de lenguaje natural
+    And un usuario realiza una consulta con texto libre: <consulta>
+    When el sistema analiza la consulta y extrae las preferencias y necesidades del usuario
+    Then se generan recomendaciones altamente personalizadas para el usuario
+
+Example:
+
+    | consulta                                              |
+    | Quiero encontrar recetas saludables para cenar        |
+    | Necesito opciones de restaurantes veganos cerca de mí |
+
+
+
+
+

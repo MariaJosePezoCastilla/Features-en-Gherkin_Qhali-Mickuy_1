@@ -1,0 +1,18 @@
+Feature: Plataforma integral de experiencia de usuario
+    Como administrador de la aplicación Qhali Mikhuy deseo desarrollar una plataforma
+    integral que ofrezca una experiencia completa a los usuarios con la ayuda de un 
+    equipo de desarrolladores, diseñadores y expertos en marketing  para brindar a los
+    usuarios promociones emocionantes, personalización de comidas saludables y poder 
+    satisfacer las necesidades según sus preferencias.
+
+Scenario: Calificación y comentarios de comidas y servicios 
+    Given soy un usuario de la aplicación Qhali Mikhuy 
+    When realice <pedidos de alimentos> a través del aplicativo o pruebe el servicio ofrecido en la plataforma
+    Then tengo la opción de <calificar> y <generar comentarios> sobre mi experiencia
+
+Example:
+   
+    |   Pedidos de alimentos                        |   Calificar       |   Generar comentarios                                         |
+    |   Pedido de "Pollo a la plancha" entregado    |   5 estrellas     |   "El driver cumplió con los protocolos de bioseguridad,      |
+                                                                        |   y además, el la comida estuvo muy rica. ¡Recomendadísimo!"  |
+

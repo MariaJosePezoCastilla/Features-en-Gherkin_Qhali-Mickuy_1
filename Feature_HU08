@@ -1,0 +1,18 @@
+Feature: Búsqueda de recetas seguras y saludables para usuarios con alergias alimentarias
+    Como un usuario de Qhali Mikhuy alérgico a la ingesta de ciertos alimentos, deseo poder
+    contar con una opción que me permita ingresar los alimentos a los que soy alérgico y a 
+    partir de ello, buscar recetas que sean seguras y saludables para evitar una posible 
+    intoxicación provocada por el consumo de algún alimento alergeno.
+
+Scenario: Usuario quiere seleccionar la receta que más le favorece. 
+    Given contamos con usuarios que padecen de alergias alimentarias, el aplicativo ofrece 
+    [recetas personalizadas], de acuerdo a los datos ingresados por cada uno de los usuarios.
+    When el usuario se registre exitosamente, tendrá la opción de ingresar <alimentos no deseados>,
+    ya sea por el padecimiento de alguna alergia o porque no es de su agrado 
+    Then el sistema mostrará [recetas sugeridas] seguras para el consumo del usuario.
+
+Example:
+   
+    |   Alimentos no deseados                   |   Recetas sugeridas                                   |
+    |   Alimentos con alto nivel de colesterol  |   Receta segura para el consumo del usuario: XXXXXX   |
+   

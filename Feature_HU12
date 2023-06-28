@@ -1,0 +1,20 @@
+Feature: Seguimiento del progreso nutricional
+    Como cliente de la aplicación Qhali Mikhuy, deseo tener acceso a una función de seguimiento de mi
+    progreso nutricional, para recibir recomendaciones personalizadas, establecer metas de salud, fomentar
+    una alimentación equilibrada y alcanzar mis objetivos de bienestar.
+ 
+Scenario: Seguimiento del progreso nutricional
+    Given que soy un cliente registrado en la aplicación
+    And he ingresado mis datos nutricionales diarios como <fecha>, <calorías>, <proteínas>, <grasas> y 
+    <carbohidratos>
+    When accedo a la función de seguimiento de progreso nutricional
+    Then puedo ver mi progreso a lo largo del tiempo
+    And recibo recomendaciones personalizadas para una alimentación equilibrada
+    And puedo establecer metas de salud y realizar un seguimiento de su cumplimiento
+
+Example:
+
+    | Fecha       | Calorías | Proteínas | Grasas | Carbohidratos |
+    | 2023-06-01  | 1500     | 80        | 50     | 200           |
+    | 2023-06-02  | 1800     | 90        | 60     | 220           |
+
